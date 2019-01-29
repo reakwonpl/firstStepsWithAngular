@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../../Services/data.service';
+import { TouchSequence } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-user',
@@ -42,15 +43,16 @@ isEdit:boolean = false;
     {
       // console.log(posts);
       
-     //this.posts = posts;
+    this.posts  = posts as any;
+   
     })
   }
 
   onClick()
   {
-   this.name = 'rkw';   
-   this.hobbies.push('new hobby');
+   this.name = 'rkw';  
   }
+
   addHobby(hobby)
   {
     //unshift to samo co push ale dodaje na poczatek a nie na koniec
@@ -85,8 +87,8 @@ interface Address{
 
 interface Post
 {
+userId:number,
 id:number,
 title:string,
-body:string,
-userId:number
+body:string
 };
