@@ -4,6 +4,6 @@ Checking out Angular
 //stuff//
 w gitbash wchodzimy tam gdzie chcemy miec projekt
 komenda ng new <nazwa apki>
--angular routinh
+-angular routing
 -style sheet
   ///end///
